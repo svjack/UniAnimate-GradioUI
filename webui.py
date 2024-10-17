@@ -136,4 +136,4 @@ with gr.Blocks() as demo:
     save_btn.click(save_config, inputs=[ref_image, drive_video, resolution, max_frames, seed], outputs=config_status)
     load_btn.click(load_config, outputs=[resolution, max_frames, seed, config_status])
 
-demo.launch(server_name="0.0.0.0", server_port=7860)
+demo.launch(server_name="0.0.0.0", server_port=7860, share = True)
